@@ -15,13 +15,11 @@ body {
 }
 
 #status {
-	width:200px;
-	height:200px;
+	width:50px;
+	height:50px;
 	position:absolute;
 	left:50%; /* centers the loading animation horizontally on the screen */
 	top:50%; /* centers the loading animation vertically on the screen */
-	background-image:url(../img/status.gif); /* path to your loading animation */
-	background-repeat:no-repeat;
-	background-position:center;
-	margin:-100px 0 0 -100px; /* is width and height divided by two */
+	margin:-25px 0 0 -25px; /* is width and height divided by two */
+	color:#000;
 }
