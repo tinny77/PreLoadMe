@@ -9,8 +9,8 @@ You can see a live preview here: <a href='http://codepen.io/niklausgerber/pen/MK
 ## Implementation
 PreLoadMe is jQuery driven. You will need to implement an up to date jQuery version and the corresponding JavaScript for executing the preloader. Add the following code right before the `</body>` tag.
 
-    <!-- jQuery Plugin -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></script>
 
     <!-- Preloader -->
     <script type="text/javascript">
@@ -41,22 +41,26 @@ The CSS-Markup will help you style the preloader. Make sure to include it on you
 	}
 
 	#status {
-		width:200px;
-		height:200px;
+		width:50px;
+		height:50px;
 		position:absolute;
 		left:50%; /* centers the loading animation horizontally one the screen */
 		top:50%; /* centers the loading animation vertically one the screen */
 		background-image:url(../img/status.gif); /* path to your loading animation */
 		background-repeat:no-repeat;
 		background-position:center;
-		margin:-100px 0 0 -100px; /* is width and height divided by two */
+		margin:-25px 0 0 -25px; /* is width and height divided by two */
+		color:#000;
 	}
 
 Finally place the following HTML Code directly after the `<body>` tag.
 
 	<!-- Preloader -->
 	<div id="preloader">
-		<div id="status">&nbsp;</div>
+		<div id="status">
+		<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+		</div>
 	</div>
 
 The outer DIV `preloader` will be called from the CSS file and will cover the entire website with a white DIV. The inner DIV `status` will show the loading animation. Also you should not forget to give your document a proper doctype. Otherwise the preloader might not work.
@@ -75,15 +79,16 @@ If you want to show preloader during AJAX request you can use the following CSS 
 	}		
 
 	#status {
-		width:200px;
-		height:200px;
+		width:50px;
+		height:50px;
 		position:absolute;
 		left:50%; /* centers the loading animation horizontally one the screen */
 		top:50%; /* centers the loading animation vertically one the screen */
 		background-image:url(../img/status.gif); /* path to your loading animation */
 		background-repeat:no-repeat;
 		background-position:center;
-		margin:-100px 0 0 -100px; /* is width and height divided by two */
+		margin:-25px 0 0 -25px; /* is width and height divided by two */
+		color:#000;
 	}			
 
 Your Javascript code will look like:
