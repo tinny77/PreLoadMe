@@ -46,9 +46,6 @@ The CSS-Markup will help you style the preloader. Make sure to include it on you
 		position:absolute;
 		left:50%; /* centers the loading animation horizontally one the screen */
 		top:50%; /* centers the loading animation vertically one the screen */
-		background-image:url(../img/status.gif); /* path to your loading animation */
-		background-repeat:no-repeat;
-		background-position:center;
 		margin:-100px 0 0 -100px; /* is width and height divided by two */
 	}
 
@@ -80,9 +77,6 @@ If you want to show preloader during AJAX request you can use the following CSS 
 		position:absolute;
 		left:50%; /* centers the loading animation horizontally one the screen */
 		top:50%; /* centers the loading animation vertically one the screen */
-		background-image:url(../img/status.gif); /* path to your loading animation */
-		background-repeat:no-repeat;
-		background-position:center;
 		margin:-100px 0 0 -100px; /* is width and height divided by two */
 	}			
 
